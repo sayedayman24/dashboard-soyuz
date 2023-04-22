@@ -1,0 +1,151 @@
+/* Start Lead-Status*/
+.status {
+    background-color: var(--white-color);
+}
+
+.status__body {
+    padding: 20px;
+}
+
+.status__header__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--sub-color);
+    /* padding here for border to full width */
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.status__body__box {
+
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+/* bg-purple for box */
+.status__body__box.bg-purple {
+    background-color: rgba(80, 111, 228, 0.1);
+}
+
+/* bg-green for box */
+.status__body__box.bg-green {
+    background-color: rgba(67, 209, 135, 0.1);
+}
+
+/* bg-yellow for box */
+.status__body__box.bg-yellow {
+    background-color: rgba(247, 187, 77, 0.1);
+}
+
+/* bg-gray for box */
+.status__body__box.bg-gray {
+    background-color: rgba(150, 163, 182, 0.1);
+}
+
+.status__body__box__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status__body__box__head h5 {
+    font-weight: 500;
+    color: #141d46;
+    font-size: 18px;
+}
+
+.status__body__box__head__icon {
+    cursor: pointer;
+    padding: 5px 7px;
+    transition: opacity var(--main-transition);
+}
+
+.status__body__box__head__icon:hover {
+    opacity: 0.8;
+}
+
+.status__body__box__head__icon span {
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+.status__body__box__body p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.status__body__box__body h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--sub-color);
+    line-height: 1.2;
+}
+
+.status__body__btn button {
+    width: 100%;
+    padding-inline: 23px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Pruple Button */
+.status__body__btn button.purple {
+    color: var(--main-color);
+    background-color: rgba(80, 111, 228, 0.1);
+}
+
+.status__body__btn button.purple:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+/* Green Button */
+.status__body__btn button.green {
+    background-color: rgba(67, 209, 135, 0.1);
+    color: var(--green-color);
+}
+
+.status__body__btn button.green:hover {
+    background-color: var(--green-color);
+    border: none;
+    color: var(--white-color);
+}
+
+/* Yellow Button */
+.status__body__btn button.yellow {
+    background-color: rgba(247, 187, 77, 0.1);
+    color: #f7bb4d;
+}
+
+.status__body__btn button.yellow:hover {
+    background-color: #f7bb4d;
+    color: var(--white-color);
+}
+
+/* Gray Button */
+.status__body__btn button.gray {
+    background-color: rgba(150, 163, 182, 0.1);
+    color: #96a3b6;
+}
+
+.status__body__btn button.gray:hover {
+    background-color: #96a3b6;
+    color: var(--white-color);
+}
+
+.status__body_btn__icon {
+    padding-right: 5px;
+}
+
+.status__body_btn__icon span {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.status__body_btn__text {
+    font-size: 1rem;
+}
+
+/* End Lead-Status*/

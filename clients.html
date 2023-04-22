@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/favicon.png"
+            type="image/x-icon"/>
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="css/vendors/all.min.css"/>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/vendors/bootstrap_5.3.0.css"/>
+        <!-- Global -->
+        <link rel="stylesheet" href="css/global.css"/>
+        <!-- Navbar -->
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <!-- Aside -->
+        <link rel="stylesheet" href="css/aside.css"/>
+        <!-- Breadcrumb-Bar -->
+        <link rel="stylesheet" href="css/breadcrumb.css"/>
+        <!-- Clients  -->
+        <link rel="stylesheet" href="css/clients.css"/>
+        <title>Soyuz</title>
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Logo"/>
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="navbar__toggler-icon">
+                        <span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <form class="d-flex me-auto">
+                        <div class="navbar__form__icon">
+                            <span>
+                                <i class="fa-regular fa-chart-bar"></i>
+                            </span>
+                        </div>
+                        <button class="btn btn-outline-success" type="submit">
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        German
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        France
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Russian
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-notfication"
+                                aria-current="page"
+                                href="#">
+                                <div>
+                                    <img src="images/settings.svg"/>
+                                </div>
+                                <div>
+                                    3
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-setting" href="#">
+                                <div>
+                                    <img src="images/notifications.svg"/>
+                                </div>
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle
+                                nav-item__profile" href="#"
+                                id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="nav-item__profile__img">
+                                    <img src="images/profile.svg"/>
+                                </div>
+                                <div>
+                                    John Doe
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        John Doe
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Email
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another
+                                        action</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something
+                                        else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Aside -->
+        <aside id="aside">
+            <div class="aside__container">
+                <div class="aside__title">
+                    <h5 class="text-uppercase">
+                        crm
+                    </h5>
+                </div>
+                <div class="aside__list">
+                    <a class="aside__list__item" href="index.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-solid fa-users-gear"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Dashboard
+                        </div>
+                    </a>
+                    <a class="aside__list__item" href="projects.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-regular fa-folder-closed"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Projects
+                        </div>
+                    </a>
+                    <a class="aside__list__item" href="lead-status.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-solid fa-chalkboard"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Lead Status
+                        </div>
+                    </a>
+                    <a class="aside__list__item active" href="clients.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-solid fa-people-carry-box"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Clients
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- End Aside -->
+
+        <!-- Start Main -->
+        <main id="main">
+            <!-- Start main__container -->
+            <div class="main__container">
+                <!-- Start BreadCrumb -->
+                <section id="breadcrumb">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-8">
+                            <div class="breadcrumb__title">
+                                <h5 class="text-capitalize">Clients</h5>
+                            </div>
+                            <div class="breadcrumb__box"
+                                style="--bs-breadcrumb-divider: '>';"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">CRM</a>
+                                    </li>
+                                    <li class="breadcrumb-item active"
+                                        aria-current="page">
+                                        Clients
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="breadcrumb__btn">
+                                <button class="btn btn-primary">
+                                    <span class="breadcrumb_btn__icon">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </span>
+                                    <span class="breadcrumb_btn__text">
+                                        Actions
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End BreadCrumb -->
+
+                <!-- Start Clients -->
+                <div class="clients">
+                    <div class="row">
+                        <!-- Start col -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="clients__box px-3 py-5">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="clients__box__img
+                                            text-center">
+                                            <img src="images/Clients/boy.svg"
+                                                alt="img" class="mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 text-center
+                                        text-lg-start">
+                                        <div class="clients__box__content">
+                                            <h4>John Doe</h4>
+                                            <p>www.example.com</p>
+                                            <div
+                                                class="clients__box__content__btn">
+                                                <button class="btn
+                                                    btn-primary purple">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-regular
+                                                                fa-message"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Message
+                                                    </span>
+                                                </button>
+                                                <button class="btn
+                                                    btn-primary green">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-solid
+                                                                fa-phone"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Call Now
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <ul
+                                                class="clients__box__content__info">
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Category :
+                                                    </h6>
+                                                    <span>
+                                                        Web Development
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Work Hrs :
+                                                    </h6>
+                                                    <span>
+                                                        58
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Country :
+                                                    </h6>
+                                                    <span>
+                                                        Italy
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Email ID :
+                                                    </h6>
+                                                    <span>
+                                                        demo@mail.com
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End col -->
+
+                        <!-- Start col -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="clients__box px-3 py-5">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="clients__box__img
+                                            text-center">
+                                            <img src="images/Clients/girl.svg"
+                                                alt="img" class="mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 text-center
+                                        text-lg-start">
+                                        <div class="clients__box__content">
+                                            <h4>Mark Wood</h4>
+                                            <p>www.example.com</p>
+                                            <div
+                                                class="clients__box__content__btn">
+                                                <button class="btn
+                                                    btn-primary purple">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-regular
+                                                                fa-message"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Message
+                                                    </span>
+                                                </button>
+                                                <button class="btn
+                                                    btn-primary green">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-solid
+                                                                fa-phone"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Call Now
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <ul
+                                                class="clients__box__content__info">
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Category :
+                                                    </h6>
+                                                    <span>
+                                                        Web Development
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Work Hrs :
+                                                    </h6>
+                                                    <span>
+                                                        58
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Country :
+                                                    </h6>
+                                                    <span>
+                                                        Italy
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Email ID :
+                                                    </h6>
+                                                    <span>
+                                                        demo@mail.com
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End col -->
+
+                        <!-- Start col -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="clients__box px-3 py-5">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="clients__box__img
+                                            text-center">
+                                            <img src="images/Clients/men.svg"
+                                                alt="img" class="mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 text-center
+                                        text-lg-start">
+                                        <div class="clients__box__content">
+                                            <h4>Kate Perry</h4>
+                                            <p>www.example.com</p>
+                                            <div
+                                                class="clients__box__content__btn">
+                                                <button class="btn
+                                                    btn-primary purple">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-regular
+                                                                fa-message"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Message
+                                                    </span>
+                                                </button>
+                                                <button class="btn
+                                                    btn-primary green">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-solid
+                                                                fa-phone"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Call Now
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <ul
+                                                class="clients__box__content__info">
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Category :
+                                                    </h6>
+                                                    <span>
+                                                        Web Development
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Work Hrs :
+                                                    </h6>
+                                                    <span>
+                                                        58
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Country :
+                                                    </h6>
+                                                    <span>
+                                                        Italy
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Email ID :
+                                                    </h6>
+                                                    <span>
+                                                        demo@mail.com
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End col -->
+
+                        <!-- Start col -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="clients__box px-3 py-5">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="clients__box__img
+                                            text-center">
+                                            <img src="images/Clients/women.svg"
+                                                alt="img" class="mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 text-center
+                                        text-lg-start">
+                                        <div class="clients__box__content">
+                                            <h4>Slevenka Rajaswki</h4>
+                                            <p>www.example.com</p>
+                                            <div
+                                                class="clients__box__content__btn">
+                                                <button class="btn
+                                                    btn-primary purple">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-regular
+                                                                fa-message"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Message
+                                                    </span>
+                                                </button>
+                                                <button class="btn
+                                                    btn-primary green">
+                                                    <span
+                                                        class="clients__box__content__btn__icon">
+                                                        <span>
+                                                            <i class="fa-solid
+                                                                fa-phone"></i>
+                                                        </span>
+                                                    </span>
+                                                    <span
+                                                        class="clients__box__content__btn__text">
+                                                        Call Now
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <ul
+                                                class="clients__box__content__info">
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Category :
+                                                    </h6>
+                                                    <span>
+                                                        Web Development
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Work Hrs :
+                                                    </h6>
+                                                    <span>
+                                                        58
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Country :
+                                                    </h6>
+                                                    <span>
+                                                        Italy
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex gap-3
+                                                    gap-sm-5">
+                                                    <h6>
+                                                        Email ID :
+                                                    </h6>
+                                                    <span>
+                                                        demo@mail.com
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                </div>
+                <!-- End Clients -->
+            </div>
+            <!-- End main__container -->
+        </main>
+        <!-- End Main -->
+
+        <!-- Start Footer -->
+        <footer id="footer">
+            <p class="mb-0">
+                &copy; 2023 Soyuz - All Rights Reserved.
+            </p>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Font-Awesome -->
+        <script src="js/vendors/all.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

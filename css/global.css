@@ -1,0 +1,95 @@
+/* Start Global */
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size: 1rem;
+    --font-family: "Mukta Vaani", sans-serif;
+    --main-color: #506fe4;
+    --sub-color: #141d46;
+    --black-light-color: #141d46;
+    --blue-rgb-color: rgba(80, 111, 228, 0.1);
+    --gray-color: #8A98AC;
+    --gray-light-color: #96a3b6;
+    --white-color: #fff;
+    --border-color: #f0f0f0;
+    --green-color: #43d187;
+    --red-color: #f9616d;
+    --border-color: rgba(0, 0, 0, 0.03);
+    --main-transition: 0.2s;
+}
+
+body {
+    font-family: "Mukta Vaani", sans-serif;
+    background-color: #f2f3f7;
+    color: #8A98AC;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    /* Chrome */
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+#main {
+    /* For Navbar */
+    margin-top: 100px;
+    /* For Aside */
+    margin-left: 250px;
+}
+
+#main .main__container {
+    /* margin-inline: 30px; */
+    padding-inline: 30px;
+}
+
+@media (max-width: 992px) {
+    #main {
+        margin-left: 0;
+    }
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 20px 30px;
+}
+
+/* End Global */

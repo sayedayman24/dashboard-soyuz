@@ -1,0 +1,65 @@
+/* Start Aside */
+#aside {
+    background-color: var(--white-color);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 250px;
+    /* height: 100%; */
+    transition: left var(--main-transition);
+    /* for test */
+    height: 200%;
+}
+
+@media (max-width: 992px) {
+    #aside {
+        top: 66px;
+        left: -250px;
+    }
+}
+
+#aside .aside__title h5 {
+    font-size: 18px;
+    color: var(--sub-color);
+    margin-bottom: 10px;
+    padding-block: 10px;
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+}
+
+#aside .aside__title h5,
+.aside__list__item {
+    padding-inline: 15px;
+}
+
+.aside__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-block: 10px;
+    color: var(--sub-color);
+    font-weight: 300;
+}
+
+.aside__list__item__icon span {
+    color: var(--gray-color);
+    transition: color var(--main-transition);
+}
+
+.aside__list__item:hover .aside__list__item__icon span,
+.aside__list__item.active .aside__list__item__icon span {
+    color: var(--main-color);
+}
+
+.aside__list__item__text {
+    color: var(--sub-color);
+    transition: color var(--main-transition);
+}
+
+.aside__list__item:hover .aside__list__item__text,
+.aside__list__item.active .aside__list__item__text {
+    color: var(--main-color);
+}
+
+/* End Aside */

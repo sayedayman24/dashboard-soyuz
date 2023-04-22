@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/favicon1.png"
+            type="image/x-icon"/>
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="css/vendors/all.min.css"/>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/vendors/bootstrap_5.3.0.css"/>
+        <!-- Global -->
+        <link rel="stylesheet" href="css/global.css"/>
+        <!-- Navbar -->
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <!-- Aside -->
+        <link rel="stylesheet" href="css/aside.css"/>
+        <!-- Breadcrumb-Bar -->
+        <link rel="stylesheet" href="css/breadcrumb.css"/>
+        <!-- Dashboard  -->
+        <link rel="stylesheet" href="css/dashboard.css"/>
+        <title>Soyuz</title>
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Logo"/>
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="navbar__toggler-icon">
+                        <span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <form class="d-flex me-auto">
+                        <div class="navbar__form__icon">
+                            <span>
+                                <i class="fa-regular fa-chart-bar"></i>
+                            </span>
+                        </div>
+                        <button class="btn btn-outline-success" type="submit">
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        German
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        France
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Russian
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-notfication"
+                                aria-current="page"
+                                href="#">
+                                <div>
+                                    <img src="images/settings.svg"/>
+                                </div>
+                                <div>
+                                    3
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-setting" href="#">
+                                <div>
+                                    <img src="images/notifications.svg"/>
+                                </div>
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle
+                                nav-item__profile" href="#"
+                                id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="nav-item__profile__img">
+                                    <img src="images/profile.svg"/>
+                                </div>
+                                <div>
+                                    John Doe
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        John Doe
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Email
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another
+                                        action</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something
+                                        else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Aside -->
+        <aside id="aside">
+            <div class="aside__container">
+                <div class="aside__title">
+                    <h5 class="text-uppercase">
+                        crm
+                    </h5>
+                </div>
+                <div class="aside__list">
+                    <a class="aside__list__item active" href="index.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-solid fa-users-gear"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Dashboard
+                        </div>
+                    </a>
+                    <a class="aside__list__item" href="projects.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-regular fa-folder-closed"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Projects
+                        </div>
+                    </a>
+                    <a class="aside__list__item" href="lead-status.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-solid fa-chalkboard"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Lead Status
+                        </div>
+                    </a>
+                    <a class="aside__list__item" href="clients.html">
+                        <div class="aside__list__item__icon">
+                            <span>
+                                <i class="fa-solid fa-people-carry-box"></i>
+                            </span>
+                        </div>
+                        <div class="aside__list__item__text">
+                            Clients
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- End Aside -->
+
+        <!-- Start Main -->
+        <main id="main">
+            <!-- Start main__container -->
+            <div class="main__container">
+                <!-- Start BreadCrumb -->
+                <section id="breadcrumb">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-8">
+                            <div class="breadcrumb__title">
+                                <h5>crm</h5>
+                            </div>
+                            <div class="breadcrumb__box"
+                                style="--bs-breadcrumb-divider: '>';"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Dashboard</a>
+                                    </li>
+                                    <li class="breadcrumb-item active"
+                                        aria-current="page">
+                                        CRM
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="breadcrumb__btn">
+                                <button class="btn btn-primary">
+                                    <span class="breadcrumb_btn__icon">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </span>
+                                    <span class="breadcrumb_btn__text">
+                                        Actions
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End BreadCrumb -->
+
+                <!-- Start Dashboard -->
+                <!-- Start Row -->
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <!-- Start Row -->
+                        <div class="row">
+                            <!-- Start Col -->
+                            <div class="col-12 col-lg-4">
+                                <div class="dashboard__status rounded-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-7">
+                                            <div class="d-flex gap-2
+                                                align-items-start">
+                                                <h4>
+                                                    $985
+                                                </h4>
+                                                <div
+                                                    class="dashboard__status__icon">
+                                                    <span>
+                                                        <i class="fa-solid
+                                                            fa-arrow-up"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">
+                                                Last Month Revenue
+                                            </p>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <img src="images/dashboard/0.png"
+                                                alt="img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <!-- Start Col -->
+                            <div class="col-12 col-lg-4">
+                                <div class="dashboard__status rounded-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-7">
+                                            <div class="d-flex gap-2
+                                                align-items-start">
+                                                <h4>
+                                                    542
+                                                </h4>
+                                                <div
+                                                    class="dashboard__status__icon
+                                                    custom">
+                                                    <span>
+                                                        <i class="fa-solid
+                                                            fa-arrow-down"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">
+                                                No of Open Invoices
+                                            </p>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <img src="images/dashboard/1.png"
+                                                alt="img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <!-- Start Col -->
+                            <div class="col-12 col-lg-4">
+                                <div class="dashboard__status rounded-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-7">
+                                            <div class="d-flex gap-2
+                                                align-items-start">
+                                                <h4>
+                                                    253
+                                                </h4>
+                                                <div
+                                                    class="dashboard__status__icon">
+                                                    <span>
+                                                        <i class="fa-solid
+                                                            fa-arrow-up"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">
+                                                Tasks Pending
+                                            </p>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <img src="images/dashboard/2.png"
+                                                alt="img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <!-- Start Col -->
+                            <div class="col-12 col-lg-6 my-4">
+                                <div class="dashboard__chart rounded-1">
+                                    <div class="dashboard__chart__head">
+                                        <div
+                                            class="dashboard__chart__head__title">
+                                            <h5>
+                                                New Leads
+                                            </h5>
+                                        </div>
+                                        <div
+                                            class="dashboard__chart__head__icon">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard__chart__body
+                                        text-center">
+                                        <img src="images/dashboard/3.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+                            <!-- Start Col -->
+                            <div class="col-12 col-lg-6 my-4">
+                                <div class="dashboard__chart rounded-1">
+                                    <div class="dashboard__chart__head">
+                                        <div
+                                            class="dashboard__chart__head__title">
+                                            <h5>
+                                                Ticket Status
+                                            </h5>
+                                        </div>
+                                        <div
+                                            class="dashboard__chart__head__icon">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard__chart__body
+                                        text-center py-2 py-xxl-0">
+                                        <img src="images/dashboard/4.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="dashboard__chart rounded-1">
+                            <div class="dashboard__chart__head">
+                                <div
+                                    class="dashboard__chart__head__title">
+                                    <h5>
+                                        Top Performer
+                                    </h5>
+                                </div>
+                                <div
+                                    class="dashboard__chart__head__icon">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="dashboard__chart__body custom
+                                text-center">
+                                <div class="dashboard__chart__body__box">
+                                    <div
+                                        class="dashboard__chart__body__box__arrows">
+                                        <div
+                                            class="dashboard__chart__body__box__arrows__left">
+                                            <span>
+                                                <i class="fa-solid
+                                                    fa-arrow-left"></i>
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="dashboard__chart__body__box__arrows__right">
+                                            <span>
+                                                <i class="fa-solid
+                                                    fa-arrow-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="dashboard__chart__body__box__title">
+                                        <span>
+                                            JD
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="dashboard__chart__body__box__contact">
+                                        <h5>John Doe</h5>
+                                        <p class="mb-2">demo@email.com</p>
+                                        <p class="custom">Product Head</p>
+                                        <div
+                                            class="dashboard__chart__body__box__contact__buttons">
+                                            <div
+                                                class="dashboard__chart__body__box__contact__buttons__icon">
+                                                <div>
+                                                    <span>
+                                                        <i class="fa-solid
+                                                            fa-phone"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="dashboard__chart__body__box__contact__buttons__icon">
+                                                <div>
+                                                    <span>
+                                                        <i class="fa-regular
+                                                            fa-envelope"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="dashboard__chart__body__box__contact__foot">
+                                            <div
+                                                class="dashboard__chart__body__box__contact__foot__box1">
+                                                <h4>253</h4>
+                                                <p class="my-2">
+                                                    Task Done
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="dashboard__chart__body__box__contact__foot__box2">
+                                                <h4>51</h4>
+                                                <p class="my-2">
+                                                    New Leads
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Row -->
+
+                <!-- Start Row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-12 col-lg-6 mt-2 mb-4 custom-width">
+                        <div class="dashboard__chart rounded-1">
+                            <div class="dashboard__chart__head">
+                                <div
+                                    class="dashboard__chart__head__title">
+                                    <h5>
+                                        Upcoming Tasks
+                                    </h5>
+                                </div>
+                                <div
+                                    class="dashboard__chart__head__icon">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="dashboard__chart__Tasks">
+                                <div class="dashboard__chart__Tasks__box p-4">
+                                    <div
+                                        class="dashboard__chart__Tasks__box__item">
+                                        <!-- Start Row -->
+                                        <div class="row gap-3 gap-sm-0 mb-3">
+                                            <div class="col-12 col-sm-3 d-flex">
+                                                <div class="d-flex
+                                                    align-items-center gap-4">
+                                                    <div class="form-check
+                                                        d-flex
+                                                        align-items-center">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            checked
+                                                            value=""
+                                                            id="flexCheckDefault"/>
+                                                    </div>
+                                                    <label
+                                                        class="dashboard__chart__Tasks__box__item__profile
+                                                        form-check-label"
+                                                        for="flexCheckDefault">
+                                                        JD
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <p class="mb-0
+                                                    dashboard__chart__Tasks__box__item_p1">
+                                                    EMAIL
+                                                </p>
+                                                <h5 class="mt-0 mb-1
+                                                    dashboard__chart__Tasks__box__item_h5">
+                                                    Send mail to Gretta
+                                                    Associates regarding
+                                                    financial process
+                                                </h5>
+                                                <p class="mb-0
+                                                    dashboard__chart__Tasks__box__item_p2">
+                                                    Assign to John Doe on 10 Jan
+                                                    2023
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-sm-3 d-flex
+                                                align-items-center
+                                                justify-content-end
+                                                justify-content-lg-start">
+                                                <div class="d-flex gap-3">
+                                                    <div class="col-7">
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__item__mark">
+                                                            Mark Done
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__icon1">
+                                                            <span
+                                                                class="text-primary">
+                                                                <i
+                                                                    class="fa-solid
+                                                                    fa-pen"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__icon2">
+                                                            <span
+                                                                class="text-danger">
+                                                                <i
+                                                                    class="fa-solid
+                                                                    fa-trash"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Row -->
+
+                                        <!-- Start Row -->
+                                        <div class="row gap-3 gap-sm-0 mb-3">
+                                            <div class="col-12 col-sm-3 d-flex">
+                                                <div class="d-flex
+                                                    align-items-center gap-4">
+                                                    <div class="form-check
+                                                        d-flex
+                                                        align-items-center">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            checked
+                                                            value=""
+                                                            id="flexCheckDefault1"/>
+                                                    </div>
+                                                    <label
+                                                        class="dashboard__chart__Tasks__box__item__profile
+                                                        form-check-label"
+                                                        for="flexCheckDefault1"
+                                                        style="
+                                                        background-color:
+                                                        rgba(67, 209, 135, 0.1);
+                                                        color: #43d187;">
+                                                        AW
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <p class="mb-0
+                                                    dashboard__chart__Tasks__box__item_p1
+                                                    text-danger">
+                                                    URGENT
+                                                </p>
+                                                <h5 class="mt-0 mb-1
+                                                    dashboard__chart__Tasks__box__item_h5">
+                                                    Prepare wireframe and
+                                                    project flow for Covetus
+                                                </h5>
+                                                <p class="mb-0
+                                                    dashboard__chart__Tasks__box__item_p2">
+                                                    Assign to Andrew Wood on 1
+                                                    Jan 2020
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-sm-3 d-flex
+                                                align-items-center
+                                                justify-content-end
+                                                justify-content-lg-start">
+                                                <div class="d-flex gap-3">
+                                                    <div class="col-7">
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__item__mark">
+                                                            Mark Done
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__icon1">
+                                                            <span
+                                                                class="text-primary">
+                                                                <i
+                                                                    class="fa-solid
+                                                                    fa-pen"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__icon2">
+                                                            <span
+                                                                class="text-danger">
+                                                                <i
+                                                                    class="fa-solid
+                                                                    fa-trash"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Row -->
+
+                                        <!-- Start Row -->
+                                        <div class="row gap-3 gap-sm-0 mb-3">
+                                            <div class="col-12 col-sm-3 d-flex">
+                                                <div class="d-flex
+                                                    align-items-center gap-4">
+                                                    <div class="form-check
+                                                        d-flex
+                                                        align-items-center">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault3"/>
+                                                    </div>
+                                                    <label
+                                                        class="dashboard__chart__Tasks__box__item__profile
+                                                        form-check-label"
+                                                        for="flexCheckDefault3"
+                                                        style="
+                                                        background-color:
+                                                        rgba(150, 163, 182,
+                                                        0.1);
+                                                        color: #96a3b6;">
+                                                        MC
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <p class="mb-0
+                                                    dashboard__chart__Tasks__box__item_p1">
+                                                    MEETING
+                                                </p>
+                                                <h5 class="mt-0 mb-1
+                                                    dashboard__chart__Tasks__box__item_h5">
+                                                    Attend seminar on Digital
+                                                    Marketing at Glasgow 2020
+                                                </h5>
+                                                <p class="mb-0
+                                                    dashboard__chart__Tasks__box__item_p2">
+                                                    Assign to Maria Carey on 18
+                                                    Dec 2019
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-sm-3 d-flex
+                                                align-items-center
+                                                justify-content-end
+                                                justify-content-lg-start">
+                                                <div class="d-flex gap-3">
+                                                    <div class="col-7">
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__item__mark">
+                                                            Mark Done
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__icon1">
+                                                            <span
+                                                                class="text-primary">
+                                                                <i
+                                                                    class="fa-solid
+                                                                    fa-pen"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="dashboard__chart__Tasks__box__icon2">
+                                                            <span
+                                                                class="text-danger">
+                                                                <i
+                                                                    class="fa-solid
+                                                                    fa-trash"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+
+                    <!-- Start col -->
+                    <div class="col-12 col-lg-6 mt-2 mb-4 custom-width">
+                        <div class="dashboard__chart rounded-1">
+                            <div class="dashboard__chart__head">
+                                <div
+                                    class="dashboard__chart__head__title">
+                                    <h5>
+                                        Earning By Countries
+                                    </h5>
+                                </div>
+                                <div
+                                    class="dashboard__chart__head__icon">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="dashboard__chart__countries">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="mb-3">
+                                            <h4 class="text-primary mb-0">
+                                                $2598
+                                            </h4>
+                                            <p
+                                                class="dashboard__chart__countries__p">
+                                                Unites States of America
+                                            </p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h4 class="text-success mb-0">
+                                                $3698
+                                            </h4>
+                                            <p
+                                                class="dashboard__chart__countries__p">
+                                                Russian Federatio
+                                            </p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h4 class="text-secondary mb-0">
+                                                $369
+                                            </h4>
+                                            <p
+                                                class="dashboard__chart__countries__p">
+                                                India
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img src="images/dashboard/5.png"
+                                            alt="map"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+                <!-- End Dashboard -->
+            </div>
+            <!-- End main__container -->
+        </main>
+        <!-- End Main -->
+
+        <!-- Start Footer -->
+        <footer id="footer">
+            <p class="mb-0">
+                &copy; 2023 Soyuz - All Rights Reserved.
+            </p>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Font-Awesome -->
+        <script src="js/vendors/all.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
